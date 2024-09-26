@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pokedex-body">
+        <div class="pokedex-left">
+            <div class="pokedex-lights">
+                <div class="light red-light"></div>
+                <div class="light yellow-light"></div>
+                <div class="light green-light"></div>
+            </div>
+            <div class="pokedex-screen">
+                <img id="pokemon-image" src="" alt="Pokemon Image" style="display: none;">
+            </div>
+            <div class="pokedex-buttons">
+                <input type="text" id="pokemon-search" placeholder="Enter Pokémon name or ID">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+        <div class="pokedex-right">
+            <div class="circle"></div>
+            <div class="stats-display">
+                <h2 id="pokemon-name">Pokémon Stats</h2>
+                <p><strong>Height:</strong> <span id="pokemon-height">Unknown</span></p>
+                <p><strong>Weight:</strong> <span id="pokemon-weight">Unknown</span></p>
+                <p><strong>Type:</strong> <span id="pokemon-type">Unknown</span></p>
+                <p><strong>Abilities:</strong> <span id="pokemon-abilities">Unknown</span></p>
+                <p><strong>Evolutions:</strong> <span id="pokemon-evolutions">N/A</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
